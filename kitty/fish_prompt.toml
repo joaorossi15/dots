@@ -1,0 +1,18 @@
+[[segment]]
+name = "cwd"
+template = "{cwd-short}"
+fg = "white"
+bg = "#44475a"
+
+[[segment]]
+name = "git"
+template = "{git_branch}{git_dirty}"
+fg = "black"
+bg = "#50fa7b"
+
+[[segment]]
+name = "exit_code"
+when = "!= 0"
+template = "✖ {exit_code}"
+fg = "white"
+bg = "#ff5555"
