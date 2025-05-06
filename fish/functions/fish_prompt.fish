@@ -9,7 +9,7 @@ function fish_prompt
   printf '%s ' (prompt_pwd)
 
   # — Arrow separator in orange —
-  set_color --bold 89b482
+  set_color --bold d8a657
   printf '%s ' $POWERLINE_SEP
 
   # — Segment 2: Git branch in orange with dirty flag —
@@ -26,6 +26,7 @@ function fish_prompt
   # — Segment 3: Exit status in red if non‑zero —
   if test $status -ne 0
       # set_color --bold fb4934
+    
     printf 'status:%d' $status
     # Arrow separator in orange
     # set_color --bold fe8019

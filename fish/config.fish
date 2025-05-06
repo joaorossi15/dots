@@ -12,9 +12,9 @@ set -g GM_BG2        "#504945"   # for comments/errors
 
 # — Override Fish’s syntax colors — 
 set -g fish_color_normal         $GM_FG0   # default text
-set -g fish_color_command        $GM_YELLOW # your commands (ls, git, etc)
-set -g fish_color_keyword        $GM_YELLOW # reserved words (for, if, else)
-set -g fish_color_param          $GM_PURPLE # command arguments
+set -g fish_color_command        $GM_FG0   # your commands (ls, git, etc)
+set -g fish_color_keyword        $GM_PURPLE # reserved words (for, if, else)
+set -g fish_color_param          $GM_YELLOW # command arguments
 set -g fish_color_option         $GM_GREEN  # flags like -la, --help
 set -g fish_color_redirection    $GM_AQUA # > >> | etc
 set -g fish_color_end            $GM_FG0    # && and ; 
