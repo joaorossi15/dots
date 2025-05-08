@@ -27,6 +27,8 @@ return require('packer').startup(function(use)
   
   use { 'sainnhe/gruvbox-material' }
 
+  use { "rose-pine/neovim" }
+
   use "lervag/vimtex"
   
   use{
