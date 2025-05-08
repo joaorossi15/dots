@@ -1,14 +1,13 @@
 # ~/.config/fish/config.fish
 
 # — Gruvbox‑Material palette (if not already set) —
-set -g GM_FG0        "#d4be98"
-set -g GM_YELLOW     "#d8a657"
-set -g GM_AQUA       "#89b482"
-set -g GM_GREEN      "#a9b665"
-set -g GM_PURPLE     "#d3869b"
-set -g GM_BLUE       "#7daea3"
-set -g GM_RED        "#ea6962"
-set -g GM_BG2        "#504945"   # for comments/errors
+set -g GM_FG0        "#e0def4"
+set -g GM_YELLOW     "#f6c177"
+set -g GM_AQUA       "#31748f"
+set -g GM_GREEN      "#9ccfd8"
+set -g GM_PURPLE     "#c4a7e7"
+set -g GM_RED        "#eb6f92"
+set -g GM_BG2        "#26233a"   # for comments/errors
 
 # — Override Fish’s syntax colors — 
 set -g fish_color_normal         $GM_FG0   # default text
@@ -24,12 +23,12 @@ set -g fish_color_search_match   $GM_PURPLE # when you use Ctrl‑R
 
 
 
-for dir in $HOME/.local/bin /opt/nvim /usr/local/go/bin
+for dir in $HOME/.local/bin /opt/nvim /usr/local/go/bin /opt/nvim-linux-x86_64/bin
     if test -d $dir; and not contains $dir $PATH
         set -gx PATH $PATH $dir
     end
 end
 
-function fish_command_not_found
+#function fish_command_not_found
     # do nothing
-end
+#end

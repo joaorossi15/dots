@@ -5,19 +5,20 @@ function fish_prompt
   # set_color --bold fe8019
   # printf ' %s ' $POWERLINE_SEP
 
-  set_color --bold ea6962
+  set_color --bold eb6f92
   printf '%s ' (prompt_pwd)
 
-  # — Arrow separator in orange —
-  set_color --bold d8a657
+  # — Arrow separator
+  set_color --bold ebbcba
   printf '%s ' $POWERLINE_SEP
 
   # — Segment 2: Git branch in orange with dirty flag —
   if git rev-parse --is-inside-work-tree &>/dev/null
     set -l branch (git symbolic-ref --short HEAD 2>/dev/null)
-     set_color --bold fe8019
+     set_color --bold c4a7e7
     printf 'git:%s ' $branch
     if not git diff --quiet &>/dev/null
+        set color --bold c4a7e7
       printf '* '
     end
     # Arrow separator in orange
