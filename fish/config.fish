@@ -24,12 +24,38 @@ set -g fish_color_quote          $GM_ROSE
 
 
 
-for dir in $HOME/.local/bin /opt/nvim /usr/local/go/bin /opt/nvim-linux-x86_64/bin
+for dir in $HOME/.local/bin /opt/nvim /usr/local/go/bin /opt/nvim-linux-x86_64/bin 
     if test -d $dir; and not contains $dir $PATH
         set -gx PATH $PATH $dir
     end
 end
 
-#function fish_command_not_found
-    # do nothing
-#end
+set -gx GOPATH $HOME/go
+set -gx GOBIN $GOPATH/bin
+set -gx PATH $PATH $GOBIN
+
+
+function pmd
+    if not set -q argv[1]
+        echo "Usage: pomodoro {work|work45|break}"
+        return 1
+    end
+    
+    set -l mode (string lower -- (string trim -- $argv[1]))
+
+    switch $mode
+        case "work"
+            set duration 25m
+        case "work45"
+            set duration 45m
+        case "break"
+            set duration 10m
+        case '*'
+            echo "Unknown mode '$argv[1]'. Use 'work', 'work45' or 'break'."
+            return 1
+    end
+
+    echo $mode | lolcat
+    timer $duration
+    spd-say "'$mode' session done"
+end

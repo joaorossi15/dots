@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/joaorossi/.cache/nvim/packer_hererocks/2.1.1713484068/share/lua/5.1/?.lua;/home/joaorossi/.cache/nvim/packer_hererocks/2.1.1713484068/share/lua/5.1/?/init.lua;/home/joaorossi/.cache/nvim/packer_hererocks/2.1.1713484068/lib/luarocks/rocks-5.1/?.lua;/home/joaorossi/.cache/nvim/packer_hererocks/2.1.1713484068/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/joaorossi/.cache/nvim/packer_hererocks/2.1.1713484068/lib/lua/5.1/?.so"
+local package_path_str = "/home/joaorossi/.cache/nvim/packer_hererocks/2.1.1741730670/share/lua/5.1/?.lua;/home/joaorossi/.cache/nvim/packer_hererocks/2.1.1741730670/share/lua/5.1/?/init.lua;/home/joaorossi/.cache/nvim/packer_hererocks/2.1.1741730670/lib/luarocks/rocks-5.1/?.lua;/home/joaorossi/.cache/nvim/packer_hererocks/2.1.1741730670/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/joaorossi/.cache/nvim/packer_hererocks/2.1.1741730670/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -89,10 +89,25 @@ _G.packer_plugins = {
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
+  ["fidget.nvim"] = {
+    loaded = true,
+    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/fidget.nvim",
+    url = "https://github.com/j-hui/fidget.nvim"
+  },
   ["flow.nvim"] = {
     loaded = true,
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/flow.nvim",
     url = "https://github.com/0xstepit/flow.nvim"
+  },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
   },
   ["gruvbox-baby"] = {
     loaded = true,
@@ -103,6 +118,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/gruvbox-material",
     url = "https://github.com/sainnhe/gruvbox-material"
+  },
+  ["heatherfield.nvim"] = {
+    loaded = true,
+    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/heatherfield.nvim",
+    url = "https://github.com/egerhether/heatherfield.nvim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -139,24 +159,6 @@ _G.packer_plugins = {
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/opt/mini.nvim",
     url = "https://github.com/echasnovski/mini.nvim"
   },
-  ["noice.nvim"] = {
-    after = { "nui.nvim", "nvim-notify" },
-    config = { "\27LJ\2\n≈\2\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\fpresets\1\0\5\19lsp_doc_border\1\15inc_rename\1\26long_message_to_split\2\20command_palette\2\18bottom_search\2\blsp\1\0\2\fpresets\0\blsp\0\roverride\1\0\1\roverride\0\1\0\0031vim.lsp.util.convert_input_to_markdown_lines\2 cmp.entry.get_documentation\2\"vim.lsp.util.stylize_markdown\2\nsetup\nnoice\frequire\0" },
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/opt/noice.nvim",
-    url = "https://github.com/folke/noice.nvim"
-  },
-  ["nui.nvim"] = {
-    load_after = {
-      ["noice.nvim"] = true
-    },
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/opt/nui.nvim",
-    url = "https://github.com/MunifTanjim/nui.nvim"
-  },
   ["null-ls.nvim"] = {
     loaded = false,
     needs_bufread = false,
@@ -174,14 +176,11 @@ _G.packer_plugins = {
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-notify"] = {
-    load_after = {
-      ["noice.nvim"] = true
-    },
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/opt/nvim-notify",
-    url = "https://github.com/rcarriga/nvim-notify"
+  ["nvim-surround"] = {
+    config = { "\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0" },
+    loaded = true,
+    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/nvim-surround",
+    url = "https://github.com/kylechui/nvim-surround"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -239,6 +238,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-surround
+time([[Config for nvim-surround]], true)
+try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
+time([[Config for nvim-surround]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]
@@ -278,13 +281,9 @@ vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
 time([[Defining lazy-load filetype autocommands]], true)
-vim.cmd [[au FileType go ++once lua require("packer.load")({'null-ls.nvim'}, { ft = "go" }, _G.packer_plugins)]]
 vim.cmd [[au FileType markdown ++once lua require("packer.load")({'markdown-preview.nvim'}, { ft = "markdown" }, _G.packer_plugins)]]
+vim.cmd [[au FileType go ++once lua require("packer.load")({'null-ls.nvim'}, { ft = "go" }, _G.packer_plugins)]]
 time([[Defining lazy-load filetype autocommands]], false)
-  -- Event lazy-loads
-time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au VimEnter * ++once lua require("packer.load")({'noice.nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
-time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
