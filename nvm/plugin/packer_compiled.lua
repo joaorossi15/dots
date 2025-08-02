@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
+  ["ashen.nvim"] = {
+    loaded = true,
+    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/ashen.nvim",
+    url = "https://github.com/ficcdaf/ashen.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -93,6 +98,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
+  ["darkvoid.nvim"] = {
+    loaded = true,
+    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/darkvoid.nvim",
+    url = "https://github.com/aliqyan-21/darkvoid.nvim"
   },
   ["fidget.nvim"] = {
     loaded = true,
@@ -207,6 +217,11 @@ _G.packer_plugins = {
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["reddish.nvim"] = {
+    loaded = true,
+    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/reddish.nvim",
+    url = "https://github.com/paulfrische/reddish.nvim"
+  },
   ["render-markdown"] = {
     config = { "\27LJ\2\nA\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\20render-markdown\frequire\0" },
     load_after = {},
@@ -281,8 +296,8 @@ vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
 time([[Defining lazy-load filetype autocommands]], true)
-vim.cmd [[au FileType markdown ++once lua require("packer.load")({'markdown-preview.nvim'}, { ft = "markdown" }, _G.packer_plugins)]]
 vim.cmd [[au FileType go ++once lua require("packer.load")({'null-ls.nvim'}, { ft = "go" }, _G.packer_plugins)]]
+vim.cmd [[au FileType markdown ++once lua require("packer.load")({'markdown-preview.nvim'}, { ft = "markdown" }, _G.packer_plugins)]]
 time([[Defining lazy-load filetype autocommands]], false)
 vim.cmd("augroup END")
 

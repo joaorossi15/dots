@@ -11,8 +11,13 @@ return require('packer').startup(function(use)
 
   use "nvim-lua/plenary.nvim"
 
+  use "paulfrische/reddish.nvim"
+
   use "0xstepit/flow.nvim"
+ 
+  use { "ficcdaf/ashen.nvim" }
   
+
   use('tpope/vim-fugitive')
   
   use('mbbill/undotree')
@@ -20,6 +25,8 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}) 
   
   use { 'luisiacc/gruvbox-baby' }
+
+  use 'aliqyan-21/darkvoid.nvim'
   
   use { 'sainnhe/gruvbox-material' }
 

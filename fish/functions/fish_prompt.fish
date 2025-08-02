@@ -1,65 +1,55 @@
 set -g POWERLINE_SEP '→'
+set -g GM_PRIMARY  "#A50034"
+set -g GM_LIGHT    "#FFFFFF"
+set -g GM_ACCENT   "#F7C6C7"
+set -g GM_ALT1     "#D50032"
+set -g GM_ALT2     "#B22234"
 
 function fish_prompt
-  # — Segment 1: Current directory in yellow —
-  # set_color --bold fe8019
-  # printf ' %s ' $POWERLINE_SEP
-
-  set_color --bold eb6f92
+  # Segment 1: Current directory
+  set_color --bold $GM_PRIMARY
   printf '%s ' (prompt_pwd)
 
-  # — Arrow separator
-  set_color --bold ebbcba
+  # Arrow separator
+  set_color --bold $GM_PRIMARY
   printf '%s ' $POWERLINE_SEP
 
-  # — Segment 2: Git branch in orange with dirty flag —
+  # Segment 2: Git branch
   if git rev-parse --is-inside-work-tree &>/dev/null
     set -l branch (git symbolic-ref --short HEAD 2>/dev/null)
-     set_color --bold c4a7e7
+    set_color --bold $GM_PRIMARY
     printf 'git:%s ' $branch
     if not git diff --quiet &>/dev/null
-        set color --bold c4a7e7
+      set_color --bold $GM_ACCENT
       printf '* '
     end
-    # Arrow separator in orange
   end
 
-  # — Segment 3: Exit status in red if non‑zero —
+  # Segment 3: Exit status
   if test $status -ne 0
-      # set_color --bold fb4934
-    
-    printf 'status:%d' $status
-    # Arrow separator in orange
-    # set_color --bold fe8019
-    # printf ' %s ' $POWERLINE_SEP
+    set_color --bold $GM_ALT2
+    printf 'status:%d ' $status
   end
 
-  # — Final prompt arrow in orange —
-  #set_color --bold fe8019
-  #printf ' ➜ '
-
-  # Reset to default
-    set_color normal
+  set_color normal
 end
 
 function fish_right_prompt
-  # time in grey
-  set_color --bold 928374
+  set_color --bold $GM_ACCENT
   printf '%s' (date '+%H:%M')
-  
-  # battery in green/orange/red
+
+  # Battery in gradient red scale
   if set -q BATTERY_PERCENT; and test $BATTERY_PERCENT -le 100
     set -l pct $BATTERY_PERCENT
     if test $pct -gt 50
-      set_color --bold b8bb26
+      set_color --bold $GM_LIGHT
     else if test $pct -gt 20
-      set_color --bold fe8019
+      set_color --bold $GM_ACCENT
     else
-      set_color --bold fb4934
+      set_color --bold $GM_ALT2
     end
     printf ' 🔋%d%%' $pct
   end
 
   set_color normal
 end
-
