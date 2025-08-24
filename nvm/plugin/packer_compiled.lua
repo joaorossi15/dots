@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -99,40 +104,25 @@ _G.packer_plugins = {
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["darkvoid.nvim"] = {
-    loaded = true,
-    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/darkvoid.nvim",
-    url = "https://github.com/aliqyan-21/darkvoid.nvim"
-  },
   ["fidget.nvim"] = {
     loaded = true,
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/fidget.nvim",
     url = "https://github.com/j-hui/fidget.nvim"
-  },
-  ["flow.nvim"] = {
-    loaded = true,
-    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/flow.nvim",
-    url = "https://github.com/0xstepit/flow.nvim"
   },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  ["gruvbox-baby"] = {
-    loaded = true,
-    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/gruvbox-baby",
-    url = "https://github.com/luisiacc/gruvbox-baby"
-  },
-  ["gruvbox-material"] = {
-    loaded = true,
-    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/gruvbox-material",
-    url = "https://github.com/sainnhe/gruvbox-material"
-  },
   ["heatherfield.nvim"] = {
     loaded = true,
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/heatherfield.nvim",
     url = "https://github.com/egerhether/heatherfield.nvim"
+  },
+  ["lackluster.nvim"] = {
+    loaded = true,
+    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/lackluster.nvim",
+    url = "https://github.com/slugbyte/lackluster.nvim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -244,11 +234,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
-  },
-  vimtex = {
-    loaded = true,
-    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/vimtex",
-    url = "https://github.com/lervag/vimtex"
   }
 }
 
@@ -296,8 +281,8 @@ vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
 time([[Defining lazy-load filetype autocommands]], true)
-vim.cmd [[au FileType go ++once lua require("packer.load")({'null-ls.nvim'}, { ft = "go" }, _G.packer_plugins)]]
 vim.cmd [[au FileType markdown ++once lua require("packer.load")({'markdown-preview.nvim'}, { ft = "markdown" }, _G.packer_plugins)]]
+vim.cmd [[au FileType go ++once lua require("packer.load")({'null-ls.nvim'}, { ft = "go" }, _G.packer_plugins)]]
 time([[Defining lazy-load filetype autocommands]], false)
 vim.cmd("augroup END")
 

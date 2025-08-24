@@ -13,10 +13,10 @@ return require('packer').startup(function(use)
 
   use "paulfrische/reddish.nvim"
 
-  use "0xstepit/flow.nvim"
- 
   use { "ficcdaf/ashen.nvim" }
   
+  use { 'numToStr/Comment.nvim' }
+
   use('tpope/vim-fugitive')
   
   use('mbbill/undotree')

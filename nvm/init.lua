@@ -21,3 +21,14 @@ require("nvim-tree").setup({
 })
 
 require'alpha'.setup(require'alpha.themes.dashboard'.config)
+
+
+vim.diagnostic.config({
+  virtual_text = {
+    prefix = "●", -- or ">>", or ""
+  },
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+  severity_sort = true,
+})
