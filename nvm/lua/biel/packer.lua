@@ -17,26 +17,17 @@ return require('packer').startup(function(use)
  
   use { "ficcdaf/ashen.nvim" }
   
-
   use('tpope/vim-fugitive')
   
   use('mbbill/undotree')
   
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}) 
   
-  use { 'luisiacc/gruvbox-baby' }
-
-  use 'aliqyan-21/darkvoid.nvim'
-  
-  use { 'sainnhe/gruvbox-material' }
-
   use { "j-hui/fidget.nvim" }
 
   use { 'egerhether/heatherfield.nvim' }
 
-  --use { 'thlr/anderson.vim' }
-
-  use "lervag/vimtex"
+  use { "slugbyte/lackluster.nvim" }
 
   use({
     "kylechui/nvim-surround",

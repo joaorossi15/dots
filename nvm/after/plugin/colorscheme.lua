@@ -1,32 +1,60 @@
---vim.cmd("colorscheme gruvbox-baby")
---vim.g.gruvbox_material_transparent_background = 2
---vim.cmd("colorscheme gruvbox-material")
---vim.gruvbox_material_background = 'light'
+--require('ashen').setup({
+----  transparent = true, -- Enable transparency
+----
+----  colors = {
+----    orange_golden = "#7f5a60",
+----    orange_glow = "#7f5a60",
+----    orange_blaze = "#7f5a60",
+----    orange_smolder = "#7f5a60",
+----    red_ember = "#6a0e1e",
+----    red_glowing = "#6a0e1e",
+----    g_2 = "#9e0f20",
+----    blue = "#7f5a60",
+----    g_3 = "#7f5a60",
+----    g_6 = "#5c5052"
+----  },
+----
+----  style_presets = {
+----    bold_functions = true,
+----    italic_comments = true,
+--  }
+--})
+--vim.cmd("colorscheme ashen")
 
--- vim.cmd("colorscheme rose-pine")
 
-require('ashen').setup({
-  transparent = true, -- Enable transparency
 
-  colors = {
-    orange_golden = "#7f5a60",
-    orange_glow = "#7f5a60",
-    orange_blaze = "#7f5a60",
-    orange_smolder = "#7f5a60",
-    red_ember = "#6a0e1e",
-    red_glowing = "#6a0e1e",
-    g_2 = "#9e0f20",
-    blue = "#7f5a60",
-    g_3 = "#7f5a60",
-    g_6 = "#5c5052"
-  },
 
-  style_presets = {
-    bold_functions = true,
-    italic_comments = true,
-  }
+-- LACKLUSTER COLORSCHEME
+local lackluster = require("lackluster")
+
+lackluster.setup({
+    tweak_color = {
+        -- lack = "#aaaa77",
+        lack = "#791A26", 
+        luster = "default",
+        orange = "default",
+        yellow = "default",
+        green = "#791A26",
+        blue = "default",
+        red = "default",
+    },
+    tweak_background = {
+        normal = 'none',
+        telescope = 'none',
+        menu = lackluster.color.gray3,
+        popup = 'default',
+    },
+        tweak_syntax = {
+        string = "default",
+        string_escape = "default",
+        comment = "default",
+        builtin = "default", -- builtin modules and functions
+        type = "#791A26",
+        keyword = "default",
+        keyword_return = "default",
+        keyword_exception = "default",
+    },
 })
-vim.cmd("colorscheme ashen")
 
---vim.cmd("colorscheme heatherfield")
+vim.cmd.colorscheme("lackluster")
 

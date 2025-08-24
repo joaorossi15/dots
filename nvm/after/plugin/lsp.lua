@@ -58,5 +58,19 @@ require('mason-lspconfig').setup({
         },
       })
     end,
+
+    ['clangd'] = function()
+      require('lspconfig').clangd.setup({
+        capabilities = require('cmp_nvim_lsp').default_capabilities(),
+        cmd = {
+          'clangd',
+          '--background-index',
+          '--clang-tidy',
+          '--completion-style=detailed',
+          '--header-insertion=never',
+          '--fallback-style=llvm',
+        },
+      })
+    end,
   },
 })
