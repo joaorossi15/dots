@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["darkvoid.nvim"] = {
+    loaded = true,
+    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/darkvoid.nvim",
+    url = "https://github.com/aliqyan-21/darkvoid.nvim"
+  },
   ["fidget.nvim"] = {
     loaded = true,
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/fidget.nvim",
@@ -113,6 +118,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["grug-far.nvim"] = {
+    loaded = true,
+    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/grug-far.nvim",
+    url = "https://github.com/MagicDuck/grug-far.nvim"
   },
   ["heatherfield.nvim"] = {
     loaded = true,
@@ -158,6 +168,11 @@ _G.packer_plugins = {
     needs_bufread = false,
     path = "/home/joaorossi/.local/share/nvim/site/pack/packer/opt/mini.nvim",
     url = "https://github.com/echasnovski/mini.nvim"
+  },
+  neovim = {
+    loaded = true,
+    path = "/home/joaorossi/.local/share/nvim/site/pack/packer/start/neovim",
+    url = "https://github.com/rose-pine/neovim"
   },
   ["null-ls.nvim"] = {
     loaded = false,

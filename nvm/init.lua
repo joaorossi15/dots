@@ -32,3 +32,6 @@ vim.diagnostic.config({
   update_in_insert = false,
   severity_sort = true,
 })
+
+vim.g.maplocalleader = ","
+vim.keymap.set("n", "<leader>sr", "<cmd>GrugFar<cr>")

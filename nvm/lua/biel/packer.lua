@@ -11,9 +11,13 @@ return require('packer').startup(function(use)
 
   use "nvim-lua/plenary.nvim"
 
+  use { "rose-pine/neovim" }
+
   use "paulfrische/reddish.nvim"
 
   use { "ficcdaf/ashen.nvim" }
+
+  use { 'aliqyan-21/darkvoid.nvim' }
   
   use { 'numToStr/Comment.nvim' }
 
@@ -28,6 +32,8 @@ return require('packer').startup(function(use)
   use { 'egerhether/heatherfield.nvim' }
 
   use { "slugbyte/lackluster.nvim" }
+
+  use { "MagicDuck/grug-far.nvim" }
 
   use({
     "kylechui/nvim-surround",
