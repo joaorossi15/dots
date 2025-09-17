@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/joaorossi/Pictures/wallhaven-zyrv6g.png",
+    "alpha": "100",
+    "special": {
+        "background": "#07181A",
+        "foreground": "#829dc5",
+        "cursor": "#829dc5"
+    },
+    "colors": {
+        "color0": "#07181A",
+        "color1": "#1B4F58",
+        "color2": "#11496D",
+        "color3": "#A94B3E",
+        "color4": "#81A27A",
+        "color5": "#113B8E",
+        "color6": "#133D9F",
+        "color7": "#829dc5",
+        "color8": "#5b6d89",
+        "color9": "#1B4F58",
+        "color10": "#11496D",
+        "color11": "#A94B3E",
+        "color12": "#81A27A",
+        "color13": "#113B8E",
+        "color14": "#133D9F",
+        "color15": "#829dc5"
+    }
+}

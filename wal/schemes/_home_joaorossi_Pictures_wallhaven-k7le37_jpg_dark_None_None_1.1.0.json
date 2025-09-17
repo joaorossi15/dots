@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/joaorossi/Pictures/wallhaven-k7le37.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0B1C2A",
+        "foreground": "#c7d1de",
+        "cursor": "#c7d1de"
+    },
+    "colors": {
+        "color0": "#0B1C2A",
+        "color1": "#B18E75",
+        "color2": "#3B66A1",
+        "color3": "#56738E",
+        "color4": "#6D8CAA",
+        "color5": "#9A9CA6",
+        "color6": "#D1C0B5",
+        "color7": "#c7d1de",
+        "color8": "#8b929b",
+        "color9": "#B18E75",
+        "color10": "#3B66A1",
+        "color11": "#56738E",
+        "color12": "#6D8CAA",
+        "color13": "#9A9CA6",
+        "color14": "#D1C0B5",
+        "color15": "#c7d1de"
+    }
+}

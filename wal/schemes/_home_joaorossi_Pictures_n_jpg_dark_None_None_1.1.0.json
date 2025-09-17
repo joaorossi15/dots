@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/joaorossi/Pictures/n.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d070c",
+        "foreground": "#debdbf",
+        "cursor": "#debdbf"
+    },
+    "colors": {
+        "color0": "#0d070c",
+        "color1": "#E8897C",
+        "color2": "#766E86",
+        "color3": "#9F758A",
+        "color4": "#CB7B85",
+        "color5": "#AC8D9D",
+        "color6": "#B38899",
+        "color7": "#debdbf",
+        "color8": "#9b8485",
+        "color9": "#E8897C",
+        "color10": "#766E86",
+        "color11": "#9F758A",
+        "color12": "#CB7B85",
+        "color13": "#AC8D9D",
+        "color14": "#B38899",
+        "color15": "#debdbf"
+    }
+}

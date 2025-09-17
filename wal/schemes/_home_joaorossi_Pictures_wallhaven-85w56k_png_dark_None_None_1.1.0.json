@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/joaorossi/Pictures/wallhaven-85w56k.png",
+    "alpha": "100",
+    "special": {
+        "background": "#242421",
+        "foreground": "#e2e1dd",
+        "cursor": "#e2e1dd"
+    },
+    "colors": {
+        "color0": "#242421",
+        "color1": "#5D94AE",
+        "color2": "#A5A399",
+        "color3": "#CBB79E",
+        "color4": "#E4CA9E",
+        "color5": "#CFC7B8",
+        "color6": "#A8C7D2",
+        "color7": "#e2e1dd",
+        "color8": "#9e9d9a",
+        "color9": "#5D94AE",
+        "color10": "#A5A399",
+        "color11": "#CBB79E",
+        "color12": "#E4CA9E",
+        "color13": "#CFC7B8",
+        "color14": "#A8C7D2",
+        "color15": "#e2e1dd"
+    }
+}

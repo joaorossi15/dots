@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/joaorossi/Pictures/wallhaven-d8p55m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#091019",
+        "foreground": "#dbd7d0",
+        "cursor": "#dbd7d0"
+    },
+    "colors": {
+        "color0": "#091019",
+        "color1": "#556161",
+        "color2": "#897969",
+        "color3": "#A8AC67",
+        "color4": "#596896",
+        "color5": "#7689A2",
+        "color6": "#9DA099",
+        "color7": "#dbd7d0",
+        "color8": "#999691",
+        "color9": "#556161",
+        "color10": "#897969",
+        "color11": "#A8AC67",
+        "color12": "#596896",
+        "color13": "#7689A2",
+        "color14": "#9DA099",
+        "color15": "#dbd7d0"
+    }
+}

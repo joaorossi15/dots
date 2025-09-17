@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/joaorossi/Pictures/hehe.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#130d0e",
+        "foreground": "#dbb5b7",
+        "cursor": "#dbb5b7"
+    },
+    "colors": {
+        "color0": "#130d0e",
+        "color1": "#903D38",
+        "color2": "#8E6671",
+        "color3": "#A36064",
+        "color4": "#D8656A",
+        "color5": "#EA6E71",
+        "color6": "#E9817D",
+        "color7": "#dbb5b7",
+        "color8": "#997e80",
+        "color9": "#903D38",
+        "color10": "#8E6671",
+        "color11": "#A36064",
+        "color12": "#D8656A",
+        "color13": "#EA6E71",
+        "color14": "#E9817D",
+        "color15": "#dbb5b7"
+    }
+}

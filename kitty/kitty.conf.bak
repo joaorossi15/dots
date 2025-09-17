@@ -1,9 +1,10 @@
 shell /usr/bin/fish
 include ./theme.conf
+include ~/.cache/wal/colors-kitty.conf
 
 
-background #101010
-foreground #39502F
+#background #101010
+#foreground #39502F
 window_padding_width 10
 background_opacity   0.90
 startup_window_opacity 0.90
@@ -12,15 +13,14 @@ bold_text_brightens_colors yes
 
 
 font_size        18.0
-font_family      family="PxPlus IBM VGA 8x16"
+# font_family      family="PxPlus IBM VGA 8x16"
 # bold_font        auto
 # italic_font      auto
 # bold_italic_font auto
 
 
 # BEGIN_KITTY_FONTS
-#font_family      family="PxPlus IBM VGA 8x16"
-#font_family      family="JetBrainsMono"
+font_family      family="ProggyClean CE Nerd Font"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto

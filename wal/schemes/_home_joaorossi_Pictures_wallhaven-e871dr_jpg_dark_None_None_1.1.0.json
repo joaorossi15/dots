@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/joaorossi/Pictures/wallhaven-e871dr.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#110001",
+        "foreground": "#e7c7a8",
+        "cursor": "#e7c7a8"
+    },
+    "colors": {
+        "color0": "#110001",
+        "color1": "#9B2A17",
+        "color2": "#B0290B",
+        "color3": "#CA310B",
+        "color4": "#C62812",
+        "color5": "#B05A34",
+        "color6": "#D54C1A",
+        "color7": "#e7c7a8",
+        "color8": "#a18b75",
+        "color9": "#9B2A17",
+        "color10": "#B0290B",
+        "color11": "#CA310B",
+        "color12": "#C62812",
+        "color13": "#B05A34",
+        "color14": "#D54C1A",
+        "color15": "#e7c7a8"
+    }
+}

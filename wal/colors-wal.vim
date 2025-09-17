@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/joaorossi/Pictures/wallhaven-k7z71q.jpg"
+let background = "#1d1310"
+let foreground = "#e3e4c8"
+let cursor     = "#e3e4c8"
+
+" Colors
+let color0  = "#1d1310"
+let color1  = "#986128"
+let color2  = "#A36E3D"
+let color3  = "#728B58"
+let color4  = "#9F9961"
+let color5  = "#D6AF45"
+let color6  = "#B4BA91"
+let color7  = "#e3e4c8"
+let color8  = "#9e9f8c"
+let color9  = "#986128"
+let color10 = "#A36E3D"
+let color11 = "#728B58"
+let color12 = "#9F9961"
+let color13 = "#D6AF45"
+let color14 = "#B4BA91"
+let color15 = "#e3e4c8"

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/joaorossi/Pictures/ak.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#120a0e",
+        "foreground": "#d6c6d6",
+        "cursor": "#d6c6d6"
+    },
+    "colors": {
+        "color0": "#120a0e",
+        "color1": "#A1536D",
+        "color2": "#D25B72",
+        "color3": "#646E9C",
+        "color4": "#A97093",
+        "color5": "#DB7493",
+        "color6": "#7687B6",
+        "color7": "#d6c6d6",
+        "color8": "#958a95",
+        "color9": "#A1536D",
+        "color10": "#D25B72",
+        "color11": "#646E9C",
+        "color12": "#A97093",
+        "color13": "#DB7493",
+        "color14": "#7687B6",
+        "color15": "#d6c6d6"
+    }
+}

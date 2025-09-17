@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/joaorossi/Pictures/wallhaven-d6r9ml.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0b0d1f",
+        "foreground": "#c3bbcc",
+        "cursor": "#c3bbcc"
+    },
+    "colors": {
+        "color0": "#0b0d1f",
+        "color1": "#586293",
+        "color2": "#69679B",
+        "color3": "#796FA1",
+        "color4": "#9F708C",
+        "color5": "#8878A5",
+        "color6": "#C7798F",
+        "color7": "#c3bbcc",
+        "color8": "#88828e",
+        "color9": "#586293",
+        "color10": "#69679B",
+        "color11": "#796FA1",
+        "color12": "#9F708C",
+        "color13": "#8878A5",
+        "color14": "#C7798F",
+        "color15": "#c3bbcc"
+    }
+}

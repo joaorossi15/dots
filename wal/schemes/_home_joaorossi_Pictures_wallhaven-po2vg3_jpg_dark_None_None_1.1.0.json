@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/joaorossi/Pictures/wallhaven-po2vg3.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#313431",
+        "foreground": "#f1dfee",
+        "cursor": "#f1dfee"
+    },
+    "colors": {
+        "color0": "#313431",
+        "color1": "#7099CA",
+        "color2": "#A39B9C",
+        "color3": "#C2C7BB",
+        "color4": "#9BAAE9",
+        "color5": "#DFB1DD",
+        "color6": "#D9D8E5",
+        "color7": "#f1dfee",
+        "color8": "#a89ca6",
+        "color9": "#7099CA",
+        "color10": "#A39B9C",
+        "color11": "#C2C7BB",
+        "color12": "#9BAAE9",
+        "color13": "#DFB1DD",
+        "color14": "#D9D8E5",
+        "color15": "#f1dfee"
+    }
+}

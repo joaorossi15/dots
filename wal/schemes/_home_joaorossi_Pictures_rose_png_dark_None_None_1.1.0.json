@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/joaorossi/Pictures/rose.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0f0d15",
+        "foreground": "#e2d5d7",
+        "cursor": "#e2d5d7"
+    },
+    "colors": {
+        "color0": "#0f0d15",
+        "color1": "#8C7C82",
+        "color2": "#98878D",
+        "color3": "#A7949A",
+        "color4": "#B19DA2",
+        "color5": "#B7A3A8",
+        "color6": "#C9B2B6",
+        "color7": "#e2d5d7",
+        "color8": "#9e9596",
+        "color9": "#8C7C82",
+        "color10": "#98878D",
+        "color11": "#A7949A",
+        "color12": "#B19DA2",
+        "color13": "#B7A3A8",
+        "color14": "#C9B2B6",
+        "color15": "#e2d5d7"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/joaorossi/Pictures/wallhaven-gp32wl.png",
+    "alpha": "100",
+    "special": {
+        "background": "#121115",
+        "foreground": "#dad4d2",
+        "cursor": "#dad4d2"
+    },
+    "colors": {
+        "color0": "#121115",
+        "color1": "#958B77",
+        "color2": "#DF9372",
+        "color3": "#47729B",
+        "color4": "#907D83",
+        "color5": "#5C95B6",
+        "color6": "#A69B8F",
+        "color7": "#dad4d2",
+        "color8": "#989493",
+        "color9": "#958B77",
+        "color10": "#DF9372",
+        "color11": "#47729B",
+        "color12": "#907D83",
+        "color13": "#5C95B6",
+        "color14": "#A69B8F",
+        "color15": "#dad4d2"
+    }
+}

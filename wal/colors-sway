@@ -1,0 +1,21 @@
+set $wallpaper /home/joaorossi/Pictures/wallhaven-k7z71q.jpg
+
+set $background #1d1310
+set $foreground #e3e4c8
+
+set $color0 #1d1310
+set $color1 #986128
+set $color2 #A36E3D
+set $color3 #728B58
+set $color4 #9F9961
+set $color5 #D6AF45
+set $color6 #B4BA91
+set $color7 #e3e4c8
+set $color8 #9e9f8c
+set $color9 #986128
+set $color10 #A36E3D
+set $color11 #728B58
+set $color12 #9F9961
+set $color13 #D6AF45
+set $color14 #B4BA91
+set $color15 #e3e4c8

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/joaorossi/Pictures/wallhaven-jx2w75.png",
+    "alpha": "100",
+    "special": {
+        "background": "#293139",
+        "foreground": "#dee9ef",
+        "cursor": "#dee9ef"
+    },
+    "colors": {
+        "color0": "#293139",
+        "color1": "#97A5B2",
+        "color2": "#92B4D0",
+        "color3": "#A3C9DF",
+        "color4": "#B4D5E8",
+        "color5": "#DCD5D9",
+        "color6": "#C5DDEC",
+        "color7": "#dee9ef",
+        "color8": "#9ba3a7",
+        "color9": "#97A5B2",
+        "color10": "#92B4D0",
+        "color11": "#A3C9DF",
+        "color12": "#B4D5E8",
+        "color13": "#DCD5D9",
+        "color14": "#C5DDEC",
+        "color15": "#dee9ef"
+    }
+}
