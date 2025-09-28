@@ -13,13 +13,33 @@ return require('packer').startup(function(use)
 
   use { "rose-pine/neovim" }
 
+  use { "n1ghtmare/noirblaze-vim" }
+
+  use { 'danishprakash/vim-yami' }
+
+  use { "anAcc22/sakura.nvim" }
+
   use "paulfrische/reddish.nvim"
 
   use { "ficcdaf/ashen.nvim" }
 
+  use { "rktjmp/lush.nvim" }
+
+  use { 'elliothatch/burgundy.vim' }
+
+  use { 'dennougorilla/azuki.vim' }
+
+  use { 'archseer/colibri.vim' }
+
   use { 'aliqyan-21/darkvoid.nvim' }
   
   use { 'numToStr/Comment.nvim' }
+
+  use { "nikolvs/vim-sunbather" }
+
+  use { 'alejandrolaguna20/noctis.nvim' }
+
+  use { "e-ink-colorscheme/e-ink.nvim" }
 
   use('tpope/vim-fugitive')
   
