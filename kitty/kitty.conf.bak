@@ -1,29 +1,27 @@
 shell /usr/bin/fish
-include ./theme.conf
+font_family         Iosevka Nerd Font Mono
+bold_font           auto
+italic_font         auto
+bold_italic_font    auto
+font_size           11
+enable_audio_bell   no
+
+window_padding_width      15
+window_padding_height     10
+confirm_os_window_close   0
+
+include theme.conf
+
+detect_urls  yes
+url_color    #0087bd
+url_style    curly
+
+scrollback_lines        1500
+wheel_scroll_multiplier 10.0
+
+background_opacity      1
+hide_window_decorations yes
+sync_to_monitor         yes
 
 
-
-
-# BEGIN_KITTY_THEME
-# Gruvbox Material Dark Medium
-include current-theme.conf
-# END_KITTY_THEME
-
-
-# — Window Padding & Opacity —
-background #3c3836
-window_padding_width 12
-background_opacity   0.95
-startup_window_opacity 0.90
-
-map ctrl+shift+b kitten https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif
-
-
-font_size        12.0
-
-# BEGIN_KITTY_FONTS
-font_family      family="Hack"
-bold_font        auto
-italic_font      auto
-bold_italic_font auto
-# END_KITTY_FONTS
+map ctrl+shift+f send_text all clear\n cd `cdinteractive`\n
