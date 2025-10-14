@@ -1,10 +1,6 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
-
--- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   
   use {
@@ -14,21 +10,43 @@ return require('packer').startup(function(use)
   }
 
   use "nvim-lua/plenary.nvim"
+
+  use { "rose-pine/neovim" }
+
+  use "paulfrische/reddish.nvim"
+
+  use { "ficcdaf/ashen.nvim" }
+
+  use { 'aliqyan-21/darkvoid.nvim' }
+
+  use { "owickstrom/vim-colors-paramount" }
   
-  use "0xstepit/flow.nvim"
-  
+  use { 'numToStr/Comment.nvim' }
+
   use('tpope/vim-fugitive')
   
   use('mbbill/undotree')
   
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}) 
   
-  use { 'luisiacc/gruvbox-baby' }
-  
-  use { 'sainnhe/gruvbox-material' }
+  use { "j-hui/fidget.nvim" }
 
-  use "lervag/vimtex"
-  
+  use { 'egerhether/heatherfield.nvim' }
+
+  use { "slugbyte/lackluster.nvim" }
+
+  use { "MagicDuck/grug-far.nvim" }
+
+  use({
+    "kylechui/nvim-surround",
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+    config = function()
+        require("nvim-surround").setup({
+            -- Configuration here, or leave empty to use defaults
+        })
+    end
+  })
+      
   use{
     "jose-elias-alvarez/null-ls.nvim", 
     ft = "go",
@@ -47,24 +65,25 @@ return require('packer').startup(function(use)
   }
 
   use {
-	  'VonHeikemen/lsp-zero.nvim',
-	  branch = 'v3.x',
-	  requires = {
-		  --- Uncomment the two plugins below if you want to manage the language servers from neovim
-		  -- {'williamboman/mason.nvim'},
-		  -- {'williamboman/mason-lspconfig.nvim'},
+    'VonHeikemen/lsp-zero.nvim',
+    branch = 'v3.x',
+    requires = {
+      -- LSP stack
+      'williamboman/mason.nvim',
+      'williamboman/mason-lspconfig.nvim',
+      'neovim/nvim-lspconfig',
 
-		  {'neovim/nvim-lspconfig'},
-		  {'hrsh7th/nvim-cmp'},
-		  {'hrsh7th/cmp-nvim-lsp'},
-		  {'L3MON4D3/LuaSnip'},
-	  }
-  }
+      -- Completion engine + LSP source
+      'hrsh7th/nvim-cmp',
+      'hrsh7th/cmp-nvim-lsp',
 
-  use {
-	  "williamboman/mason.nvim",
-	  "williamboman/mason-lspconfig.nvim",
-	  "neovim/nvim-lspconfig",
+      -- Snippet engine + bridges
+      'L3MON4D3/LuaSnip',
+      'saadparwaiz1/cmp_luasnip',
+
+      -- Big community snippet collection (contains the “iferr” snippet)
+      'rafamadriz/friendly-snippets',
+    },
   }
 
   use {
@@ -89,36 +108,6 @@ return require('packer').startup(function(use)
     end,
   }
 
-  use {
-    'folke/noice.nvim',
-    opt   = true,
-    event = 'VimEnter',
-    requires = {
-      'MunifTanjim/nui.nvim',
-      { 'rcarriga/nvim-notify', opt = true },
-    },
-    config = function()
-      require('noice').setup({
-        lsp = {
-        -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
-        override = {
-          ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
-          ["vim.lsp.util.stylize_markdown"] = true,
-          ["cmp.entry.get_documentation"] = true, -- requires hrsh7th/nvim-cmp
-        },
-      },
-      -- you can enable a preset for easier configuration
-      presets = {
-        bottom_search = true, -- use a classic bottom cmdline for search
-        command_palette = true, -- position the cmdline and popupmenu together
-        long_message_to_split = true, -- long messages will be sent to a split
-        inc_rename = false, -- enables an input dialog for inc-rename.nvim
-        lsp_doc_border = false, -- add a border to hover docs and signature help
-      },
-      })
-    end,
-  }
-  
   use({
     'MeanderingProgrammer/markdown.nvim',
     as = 'render-markdown', -- Only needed if you have another plugin named markdown.nvim
@@ -130,4 +119,3 @@ return require('packer').startup(function(use)
 })
 
 end)
-
